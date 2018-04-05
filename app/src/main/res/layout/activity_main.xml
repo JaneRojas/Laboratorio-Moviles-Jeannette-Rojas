@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+        android:id ="@+id/details"
+        android:layout_width ="fill_parent"
+        android:layout_height ="wrap_content"
+        android:layout_alignParentBottom ="true"
+        android:stretchColumns ="1">
+    <TableRow>
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+    </TableRow>
+
+    <TableRow>
+
+        <EditText
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Professional Profile" />
+    </TableRow >
+
+    <TableRow>
+
+        <RadioGroup android:id ="@+id/types">
+            <RadioButton
+                android:layout_width ="wrap_content"
+                android:layout_height ="wrap_content"
+                android:id ="@+id/female"
+                android:text ="Female"/>
+
+            <RadioButton
+                android:layout_width ="wrap_content"
+                android:layout_height ="wrap_content"
+                android:id ="@+id/male"
+                android:text ="Male"/>
+        </RadioGroup>
+
+    </TableRow>
+        <Button
+            android:id ="@+id/photo"
+            android:layout_width ="fill_parent"
+            android:layout_height ="wrap_content"
+            android:text ="Photo" />
+        <Button
+            android:id ="@+id/save"
+            android:layout_width ="fill_parent"
+            android:layout_height ="wrap_content"
+            android:text ="Save" />
+
+    </TableLayout>
+
+    <ListView android:id ="@+id/lista"
+        android:layout_width ="fill_parent"
+        android:layout_height ="wrap_content"
+        android:layout_alignParentTop ="true"
+        android:layout_above ="@+id/details" >
+
+    </ListView>
+
+</RelativeLayout>
